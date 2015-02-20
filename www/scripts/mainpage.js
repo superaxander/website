@@ -38,11 +38,11 @@ function changeContent(){
         contentpane.innerHTML = request.getResponseText();
         menuItem = document.getElementById(pagename);
         menuItem.style = "color:black";
-        menuItem.href = null;
+        menuItem.onClick = null;
         if(oldPage != null && oldUrl != null){
           menuItem2 = document.getElementById(oldPage)
           menuItem2.style = null;
-          menuItem2.href = oldUrl
+          menuItem2.onClick = "loadPage(oldPage)"
         }
     }
   }
