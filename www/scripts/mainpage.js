@@ -1,4 +1,4 @@
-pageName = "Home"
+pagename = "Home";
 function createRequest() {
   try {
     request = new XMLHttpRequest();
@@ -18,32 +18,23 @@ function createRequest() {
 
 function loadPage(page){
   oldPage = pagename;
-  oldUrl = url;
-  url = "/content/" + page;
+  url = "content/" + page;
   pagename = page;
-  request = createRequest()
-  if (request == null) {
+  registerRequest = createRequest();
+  if (registerRequest === null) {
     alert("Request failed");
   }else{
-    request.onreadystatechange = changeContent;
+    registerRequest.onreadystatechange = changeContent;
     registerRequest.open("GET", url, true);
     registerRequest.send(null);
   }
 }
 
 function changeContent(){
-  if(request.readyState == 4){
-    if(request.status == 200){
+  if(registerRequest.readyState == 4){
+    if(registerRequest.status == 200){
         contentpane = document.getElementById("content");
-        contentpane.innerHTML = request.getResponseText();
-        menuItem = document.getElementById(pagename);
-        menuItem.style = "color:black";
-        menuItem.onClick = null;
-        if(oldPage != null && oldUrl != null){
-          menuItem2 = document.getElementById(oldPage)
-          menuItem2.style = null;
-          menuItem2.onClick = "loadPage(oldPage)"
-        }
+        contentpane.innerHTML = registerRequest.responseText;
     }
   }
 }
