@@ -5,15 +5,15 @@
     <link rel="stylesheet" href="style.css" type="text/css">
     <script src="scripts/mainpage.js"></script>
   </head>
-  <body>
+  <body onload="loadPage('Home')">
     <div id="menu">
-      <a id="home" style="color: black;">Home</a>
-      <a id="about" onclick="loadPage('About')">About</a>
-      <a id="projects" onclick="loadPage('Projects')">Projects</a>
-      <a id="contact" onclick="loadPage('Contact')">Contact</a>
+      <a id="home" onclick="loadPage('Home')" class="menuitem">Home</a>
+      <a id="about" onclick="loadPage('About')" class="menuitem">About</a>
+      <a id="projects" onclick="loadPage('Projects')" class="menuitem">Projects</a>
+      <a id="contact" onclick="loadPage('Contact')" class="menuitem">Contact</a>
     </div>
     <div id="content">
-        Loading page
+        Loading page...
     </div>
     <div id = "footer">
         Created by <a href="https://twitter.com/superaxander">@Superaxander</a>
