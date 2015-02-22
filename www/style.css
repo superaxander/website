@@ -24,7 +24,7 @@ body{
     margin-left:auto;
     margin-right:auto;
     position: relative;
-    top: 2em;
+    top: 3em;
 }
 #footer{
     display: block;
@@ -34,7 +34,7 @@ body{
     margin-right: 0px;
     position:relative;
     height:1em;
-    top: 3em;
+    top: 4em;
 }
 .menuitem{
     cursor: pointer;
