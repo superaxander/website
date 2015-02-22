@@ -35,6 +35,7 @@ function changeContent(){
     if(registerRequest.status == 200){
         contentpane = document.getElementById("content");
         contentpane.innerHTML = registerRequest.responseText;
+        document.title = "Alexander | "+pagename;
     }
   }
 }
