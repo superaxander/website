@@ -36,6 +36,9 @@ body{
     height:1em;
     top: 3em;
 }
+.menuitem{
+    cursor: pointer;
+}
 a{
   color: blue;
 }

@@ -25,7 +25,7 @@ function loadPage(page){
     alert("Request failed");
   }else{
     registerRequest.onreadystatechange = changeContent;
-    registerRequest.open("GET", url, true);
+    registerRequest.open("POST", url, true);
     registerRequest.send(null);
   }
 }
