@@ -58,6 +58,7 @@ hr{
   background-color: lightGray;
   position:relative;
   top: 3em;
+  border: none;
 }
 li{
   line-height: 200%;
