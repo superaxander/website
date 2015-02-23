@@ -50,6 +50,10 @@ body{
 .menuitem{
     cursor: pointer;
 }
+hr{
+  position:relative;
+  top: 3em;
+}
 li{
   line-height: 200%;
 }
