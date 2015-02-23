@@ -33,6 +33,8 @@ function loadPage(page){
 function changeContent(){
   if(registerRequest.readyState == 4){
     if(registerRequest.status == 200){
+        title = document.getElementById("title");
+        title.innerHTML = pagename
         contentpane = document.getElementById("content");
         contentpane.innerHTML = registerRequest.responseText;
         document.title = "Alexander | "+pagename;
