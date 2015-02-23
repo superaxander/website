@@ -16,6 +16,17 @@ body{
     left: 0;
     z-index: 999;
 }
+#title{
+  color: inherit;
+  display: block;
+  text-align: left;
+  margin-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  height: 1em;
+  position: relative;
+  top: 3em;
+}
 #content{
     display:block;
     color: inherit;
@@ -24,7 +35,7 @@ body{
     margin-left:auto;
     margin-right:auto;
     position: relative;
-    top: 3em;
+    top: 4em;
 }
 #footer{
     display: block;
@@ -34,7 +45,7 @@ body{
     margin-right: 0px;
     position:relative;
     height:1em;
-    top: 4em;
+    top: 5em;
 }
 .menuitem{
     cursor: pointer;
