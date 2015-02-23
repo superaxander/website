@@ -50,6 +50,9 @@ body{
 .menuitem{
     cursor: pointer;
 }
+li{
+  line-height: 200%;
+}
 a{
   color: blue;
 }
