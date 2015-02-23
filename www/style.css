@@ -53,7 +53,7 @@ body{
     cursor: pointer;
 }
 hr{
-  height: 0.25em;
+  height: 0.01em;
   color: lightGray;
   background-color: lightGray;
   position:relative;
