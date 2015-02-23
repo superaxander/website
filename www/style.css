@@ -53,6 +53,9 @@ body{
     cursor: pointer;
 }
 hr{
+  height: 0.25em;
+  color: lightGray;
+  background-color: lightGray;
   position:relative;
   top: 3em;
 }
