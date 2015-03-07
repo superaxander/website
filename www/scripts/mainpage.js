@@ -27,6 +27,7 @@ function loadPage(page){
     registerRequest.onreadystatechange = changeContent;
     registerRequest.open("POST", url, true);
     registerRequest.send(null);
+    document.title = "Alexander | Loading"
   }
 }
 
@@ -39,5 +40,11 @@ function changeContent(){
         contentpane.innerHTML = registerRequest.responseText;
         document.title = "Alexander | "+pagename;
     }
+  }else if(registerRequest.readyState == 3){
+    document.title = "Alexander | Loading..."
+  }else if(registerRequest.readyState == 2){
+    document.title = "Alexander | Loading.."
+  }else{
+    document.title = "Alexander | Loading."
   }
 }
