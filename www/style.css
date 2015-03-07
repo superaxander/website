@@ -51,6 +51,7 @@ body{
 }
 .menuitem{
     cursor: pointer;
+    color: black;
 }
 hr{
   height: 0.01em;
