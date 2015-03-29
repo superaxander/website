@@ -28,6 +28,8 @@ function loadPage(page){
     registerRequest.open("POST", url, true);
     registerRequest.send(null);
     document.title = "Alexander | Loading"
+    title = document.getElementById("title");
+    title.innerHTML = "Loading <i class="fa fa-spinner fa-spin"></i>"
   }
 }
 
