@@ -28,8 +28,11 @@ function loadPage(page){
     registerRequest.open("POST", url, true);
     registerRequest.send(null);
     document.title = "Alexander | Loading"
+    spinner = document.createElement("I")
+    spinner.class = "fa fa-spinner fa-spin"
     title = document.getElementById("title");
-    title.innerHTML = "Loading <i class="fa fa-spinner fa-spin"></i>"
+    title.innerHTML = "Loading"
+    title.appendChild(spinner)
   }
 }
 
